@@ -139,7 +139,7 @@
   jumpLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      setOpenService(link.dataset.service, { scroll: true });
+      setOpenService(link.dataset.service, { scroll: false });
     });
   });
 
