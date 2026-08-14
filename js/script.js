@@ -121,25 +121,11 @@
     }
   }
 
-  accordions.forEach(function (acc) {
-    var head = acc.querySelector('.abt-acc-head');
-    if (!head) return;
-    head.addEventListener('click', function () {
-      if (acc.classList.contains('is-open')) {
-        acc.classList.remove('is-open');
-        jumpLinks.forEach(function (link) {
-          if (link.dataset.service === acc.id) link.classList.remove('is-active');
-        });
-      } else {
-        setOpenService(acc.id, { scroll: false });
-      }
-    });
-  });
 
   jumpLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      setOpenService(link.dataset.service, { scroll: true });
+      setOpenService(link.dataset.service, { scroll: false });
     });
   });
 
