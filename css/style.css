@@ -199,8 +199,7 @@ button { font: inherit; }
 .abt-hero-card {
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(2px);
+  background: #ffffff;
   padding: 32px 40px;
   border-radius: 6px;
   margin: 20px;
