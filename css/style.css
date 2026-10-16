@@ -201,10 +201,10 @@ button { font: inherit; }
   text-align: center;
   background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(2px);
-  padding: 46px 54px;
+  padding: 32px 40px;
   border-radius: 6px;
   margin: 20px;
-  max-width: min(760px, 90vw);
+  max-width: min(620px, 90vw);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
   animation: abtFade 0.7s ease both;
 }
@@ -213,7 +213,6 @@ button { font: inherit; }
   color: var(--teal);
   font-weight: 600;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
   font-size: clamp(13px, 1.6vw, 16px);
 }
 .abt-hero-title {
@@ -581,6 +580,7 @@ button { font: inherit; }
 }
 .abt-supplier-logo { height: 56px; display: flex; align-items: center; justify-content: center; padding: 4px; }
 .abt-supplier-logo img { max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+.abt-suppliers-row + .abt-suppliers-row { margin-top: clamp(20px, 2.5vw, 34px); }
 
 /* ===== About ===== */
 .abt-about { background: #ffffff; padding: clamp(56px, 8vw, 100px) 22px; }
