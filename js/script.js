@@ -12,6 +12,12 @@
   window.addEventListener('resize', setHeaderHeight);
   window.addEventListener('load', setHeaderHeight);
 
+  /* ===== Years-experience counter (auto-updates every year) ===== */
+  var yearsExp = new Date().getFullYear() - 2013;
+  document.querySelectorAll('.abt-years-exp').forEach(function (el) {
+    el.textContent = yearsExp;
+  });
+
   /* ===== Mobile menu ===== */
   var hamburger = document.getElementById('abt-hamburger');
   var mobileMenu = document.getElementById('abt-mobile-menu');
