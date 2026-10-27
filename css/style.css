@@ -198,9 +198,10 @@ button { font: inherit; }
 }
 .abt-hero-card {
   position: relative;
+  top: -9%;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
-  padding: 32px 40px;
+  padding: 24px 40px;
   border-radius: 6px;
   margin: 20px;
   max-width: min(620px, 90vw);
@@ -208,7 +209,7 @@ button { font: inherit; }
   animation: abtFade 0.7s ease both;
 }
 .abt-hero-eyebrow {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   color: var(--teal);
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -223,7 +224,7 @@ button { font: inherit; }
   font-size: clamp(38px, 7vw, 80px);
 }
 .abt-hero-sub {
-  margin: 18px 0 0;
+  margin: 12px 0 0;
   color: var(--teal);
   font-weight: 500;
   font-size: clamp(15px, 2.2vw, 22px);
